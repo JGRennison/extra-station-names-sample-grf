@@ -1,7 +1,9 @@
+NMLC = nmlc
+
 .PHONY: default bundle
 
 default:
-	grfcodec -e extra_station_names_sample.grf .
+	$(NMLC) extra_station_names_sample.nml --nfo=extra_station_names_sample.nfo --grf=extra_station_names_sample.grf
 
 bundle: default
 	mkdir -p extra_station_names

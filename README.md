@@ -12,7 +12,10 @@
 
 ### Development
 
-* For GRF author documentation of the extra station names feature , [see here](https://htmlpreview.github.io/?https://github.com/JGRennison/OpenTTD-patches/blob/jgrpp/docs/newgrf-additions.html#a0globalsettings).
+* Compiling requires a forked verison of NML with additional features from [here](https://github.com/JGRennison/nml).
+* For NewGRF development details of the extra station names feature used in this GRF see:
+    * [NML specification additions](https://jgrennison.github.io/OpenTTD-patches/newgrf-additions-nml.html#global-variable-properties).
+    * [NewGRF specification additions](https://jgrennison.github.io/OpenTTD-patches/newgrf-additions.html#a0globalsettings).
 
 ### License
 

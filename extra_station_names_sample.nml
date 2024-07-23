@@ -1,0 +1,86 @@
+/* extra_station_names_sample.nml */
+
+/*
+    License: GPL v2
+*/
+
+grf {
+    grfid: "JGR\80";
+    name: string(STR_GRF_NAME);
+    desc: string(STR_GRF_DESCRIPTION);
+    version: 3;
+    min_compatible_version: 3;
+    url: string(STR_GRF_URL);
+
+    param {
+        param_extra_names_probability {
+            type: int;
+            name: string(STR_PARAM_EXTRA_NAMES_PROB_NAME);
+            desc: string(STR_PARAM_EXTRA_NAMES_PROB_DESC);
+            min_value: 0;
+            max_value: 255;
+            def_value: 0;
+        }
+    }
+}
+
+if (!extended_feature_test("action0_global_extra_station_names")) {
+    error(FATAL, string(STR_UNSUPPORTED_VERSION));
+}
+
+item (FEAT_GLOBALVARS) {
+    property {
+        extra_station_names_probability: param_extra_names_probability;
+
+        extra_station_name: [string(STR_NAME_0000), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD, EXTRA_STATION_NAME_FLAG_NOT_TOWN_CENTRE)];
+        extra_station_name: [string(STR_NAME_0001), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_0002), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_0003), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_0004), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_0005), bitmask(EXTRA_STATION_NAME_FLAG_DOCK)];
+        extra_station_name: [string(STR_NAME_0006), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_0007), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_0008), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_0009), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_000A), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_000B), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_000C), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_000D), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_000E), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_000F), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+
+        extra_station_name: [string(STR_NAME_0010), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_0011), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_0012), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_0013), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_0014), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_0015), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_0016), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD, EXTRA_STATION_NAME_FLAG_TOWN_CENTRE_ONLY)];
+        extra_station_name: [string(STR_NAME_0017), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_0018), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_0019), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_001A), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD, EXTRA_STATION_NAME_FLAG_NOT_TOWN_CENTRE)];
+        extra_station_name: [string(STR_NAME_001B), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_001C), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_001D), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_001E), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD, EXTRA_STATION_NAME_FLAG_NOT_TOWN_CENTRE)];
+        extra_station_name: [string(STR_NAME_001F), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+
+        extra_station_name: [string(STR_NAME_0020), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD, EXTRA_STATION_NAME_FLAG_TOWN_CENTRE_ONLY)];
+        extra_station_name: [string(STR_NAME_0021), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD, EXTRA_STATION_NAME_FLAG_NEAR_WATER_ONLY)];
+        extra_station_name: [string(STR_NAME_0022), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD, EXTRA_STATION_NAME_FLAG_NOT_TOWN_CENTRE)];
+        extra_station_name: [string(STR_NAME_0023), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_0024), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD, EXTRA_STATION_NAME_FLAG_NEAR_WATER_ONLY)];
+        extra_station_name: [string(STR_NAME_0025), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD, EXTRA_STATION_NAME_FLAG_NOT_TOWN_CENTRE)];
+        extra_station_name: [string(STR_NAME_0026), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD, EXTRA_STATION_NAME_FLAG_NOT_TOWN_CENTRE)];
+        extra_station_name: [string(STR_NAME_0027), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_0028), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_0029), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_002A), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD, EXTRA_STATION_NAME_FLAG_NOT_TOWN_CENTRE)];
+        extra_station_name: [string(STR_NAME_002B), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD, EXTRA_STATION_NAME_FLAG_NOT_TOWN_CENTRE)];
+        extra_station_name: [string(STR_NAME_002C), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD, EXTRA_STATION_NAME_FLAG_NOT_TOWN_CENTRE)];
+        extra_station_name: [string(STR_NAME_002D), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD)];
+        extra_station_name: [string(STR_NAME_002E), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD, EXTRA_STATION_NAME_FLAG_NEAR_WATER_ONLY)];
+        extra_station_name: [string(STR_NAME_002F), bitmask(EXTRA_STATION_NAME_FLAG_RAIL, EXTRA_STATION_NAME_FLAG_ROAD, EXTRA_STATION_NAME_FLAG_NOT_TOWN_CENTRE)];
+    }
+}

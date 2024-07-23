@@ -1,0 +1,60 @@
+﻿##grflangid 0x01
+STR_GRF_NAME                                :Extra station names sample v3
+STR_GRF_DESCRIPTION                         :Sample GRF for the extra station names feature. This GRF adds extra station name strings for when all the default names have been used up, instead of "Town Station #NNN". Requires an OpenTTD version which supports this feature such as JGR's patchpack v0.42.3 or later.{}{ORANGE}Licensed under GPLv2
+STR_GRF_URL                                 :https://github.com/JGRennison/extra-station-names-sample-grf
+
+STR_UNSUPPORTED_VERSION                     :Requires an OpenTTD version which supports this feature such as JGR's patchpack v0.42.3 or later.
+
+STR_PARAM_EXTRA_NAMES_PROB_NAME             :Use extra names even when defaults available
+STR_PARAM_EXTRA_NAMES_PROB_DESC             :Set the probability that extra names are used even when there are default names available. 0 is never, 255 is always.{}Requires an OpenTTD version which supports this feature such as JGR's patchpack v0.47.2 or later.
+
+STR_NAME_0000                               :{STRING} Heath Road
+STR_NAME_0001                               :{STRING} Holywells Road
+STR_NAME_0002                               :{STRING} Foxhall Road
+STR_NAME_0003                               :{STRING} Bucklesham Road
+STR_NAME_0004                               :{STRING} Nacton Road
+STR_NAME_0005                               :{STRING} Quay
+STR_NAME_0006                               :{STRING} Dobbs Lane
+STR_NAME_0007                               :{STRING} Eagle Way
+STR_NAME_0008                               :{STRING} Ropes Drive
+STR_NAME_0009                               :{STRING} Old Barrack Road
+STR_NAME_000A                               :{STRING} Playford Road
+STR_NAME_000B                               :{STRING} Spring Road
+STR_NAME_000C                               :{STRING} Duke Street
+STR_NAME_000D                               :{STRING} Old Cattle Market
+STR_NAME_000E                               :{STRING} Queen Street
+STR_NAME_000F                               :{STRING} Tavern Street
+
+STR_NAME_0010                               :{STRING} Hall Road
+STR_NAME_0011                               :{STRING} Westgate
+STR_NAME_0012                               :{STRING} Kirkgate
+STR_NAME_0013                               :{STRING} Merton Street
+STR_NAME_0014                               :{STRING} Magpie Lane
+STR_NAME_0015                               :{STRING} Radcliffe Square
+STR_NAME_0016                               :{STRING} High Street
+STR_NAME_0017                               :{STRING} Parks Road
+STR_NAME_0018                               :{STRING} Mill Road
+STR_NAME_0019                               :{STRING} Cliff Road
+STR_NAME_001A                               :{STRING} Sandy Lane
+STR_NAME_001B                               :{STRING} School Road
+STR_NAME_001C                               :{STRING} Newbourne Road
+STR_NAME_001D                               :{STRING} Church Lane
+STR_NAME_001E                               :{STRING} Shingle Street
+STR_NAME_001F                               :{STRING} Lodge Road
+
+STR_NAME_0020                               :{STRING} Buttermarket
+STR_NAME_0021                               :{STRING} Neptune Quay
+STR_NAME_0022                               :{STRING} Sandyhill Lane
+STR_NAME_0023                               :{STRING} Tile Street
+STR_NAME_0024                               :{STRING} Ferry Road
+STR_NAME_0025                               :{STRING} Common Lane
+STR_NAME_0026                               :{STRING} Summer Lane
+STR_NAME_0027                               :{STRING} Henley Road
+STR_NAME_0028                               :{STRING} Chapel Road
+STR_NAME_0029                               :{STRING} Baker's Hill
+STR_NAME_002A                               :{STRING} Hawthorn Drive
+STR_NAME_002B                               :{STRING} Old Post Office Lane
+STR_NAME_002C                               :{STRING} New Lane
+STR_NAME_002D                               :{STRING} Orford Road
+STR_NAME_002E                               :{STRING} Crabbe Street
+STR_NAME_002F                               :{STRING} Minsmere Road
